@@ -31,6 +31,7 @@ public class MainActivity extends Activity implements ClusterRender,
 	private AMap mAMap;
 	private MapView mMapView;
 	private TextView infoTextView;
+	// Test By Tab
 	private int clusterRadius = 80;
 
 	@Override
