@@ -1,5 +1,9 @@
 本工程为基于高德地图Android SDK进行封装，实现了Marker聚合效果的例子
-效果图如下：
+<br /><h2>前述：</h2> 
+- [高德官方网站申请key](http://id.amap.com/?ref=http%3A%2F%2Fapi.amap.com%2Fkey%2F).
+- 阅读[参考手册](http://api.amap.com/Public/reference/Android%20API%20v2/).
+- 工程基于3D地图2.2.1版本，[基本介绍](https://github.com/amapapi/Android_AMap_3DMapSDK).
+<br /><h2>效果图如下：</h2>
  * ![Screenshot](https://raw.githubusercontent.com/amapapi/Android_ClusterMarker/master/Resources/%E8%81%9A%E5%90%88%E6%95%88%E6%9E%9C.png)
  * ![Screenshot](https://raw.githubusercontent.com/amapapi/Android_ClusterMarker/master/Resources/%E8%81%9A%E5%90%88%E7%82%B9%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6.png) 
 <br /><h2>版本更新1.0.0</h2>
