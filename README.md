@@ -20,9 +20,9 @@
  + [实例应用](https://github.com/amapapi/Android_ClusterMarker/raw/master/Resources/ClusterMarkerDemo.apk) (apk)
  + 扫一扫下载应用
  
-![Screenshot]( https://raw.githubusercontent.com/amapapi/Android_ClusterMarker/master/Resources/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
+![Screenshot]( https://raw.githubusercontent.com/amapapi/Android_ClusterMarker/master/Resources/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)  
 
- ##使用方法：
+ ## 使用方法：
  
 -  1:搭建高德地图 AndroidSDK工程方法见：**[配置方法](http://developer.amap.com/api/android-sdk/guide/project/)**
 -  2:接口使用
