@@ -1,23 +1,34 @@
 本工程为基于高德地图Android SDK进行封装，实现了Marker聚合效果的例子
-<br /><h2>前述：</h2> 
+##前述：
+
 - [高德官方网站申请key](http://id.amap.com/?ref=http%3A%2F%2Fapi.amap.com%2Fkey%2F).
 - 阅读[参考手册](http://api.amap.com/Public/reference/Android%20API%20v2/).
 - 工程基于3D地图2.2.1版本，[基本介绍](https://github.com/amapapi/Android_AMap_3DMapSDK).
-<br /><h2>效果图如下：</h2>
+
+##效果图如下：
+
  * ![Screenshot](https://raw.githubusercontent.com/amapapi/Android_ClusterMarker/master/Resources/%E8%81%9A%E5%90%88%E6%95%88%E6%9E%9C.png)
  * ![Screenshot](https://raw.githubusercontent.com/amapapi/Android_ClusterMarker/master/Resources/%E8%81%9A%E5%90%88%E7%82%B9%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6.png) 
-<br /><h2>版本更新1.0.0</h2>
-<br /> 提供了基本的聚合效果，用户可以自定义渲染方式
-<br /> <h2>下载资源：</h2>
- <br />**[clustermarkerlibrary.jar](https://github.com/amapapi/Android_ClusterMarker/raw/master/Resources/clustermarkerlibrary.jar)** (library)
- <br />**[实例应用](https://github.com/amapapi/Android_ClusterMarker/raw/master/Resources/ClusterMarkerDemo.apk)** (apk)
- <br /> 扫一扫下载应用
- <br />![Screenshot]( https://raw.githubusercontent.com/amapapi/Android_ClusterMarker/master/Resources/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
 
-<br /><h2> 使用方法：</h2>
-<br />  1:搭建高德地图 AndroidSDK工程方法见：**[配置方法](http://developer.amap.com/api/android-sdk/guide/project/)**
-<br />  2:接口使用
+ ##版本更新1.0.0 
+ 
+ 提供了基本的聚合效果，用户可以自定义渲染方式
+ 
+ ##下载资源：
+ 
+ + [clustermarkerlibrary.jar](https://github.com/amapapi/Android_ClusterMarker/raw/master/Resources/clustermarkerlibrary.jar) (library)
+ + [实例应用](https://github.com/amapapi/Android_ClusterMarker/raw/master/Resources/ClusterMarkerDemo.apk) (apk)
+ + 扫一扫下载应用
+ 
+![Screenshot]( https://raw.githubusercontent.com/amapapi/Android_ClusterMarker/master/Resources/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
+
+ ##使用方法：
+ 
+-  1:搭建高德地图 AndroidSDK工程方法见：**[配置方法](http://developer.amap.com/api/android-sdk/guide/project/)**
+-  2:接口使用
+
 * 初始化聚合和加入要素
+
 ``` java
 //初始化
 		ClusterOverlay clusterOverlay = new ClusterOverlay(mAMap, 
@@ -28,14 +39,18 @@
 					ConstantUtils.names[i]);
 			clusterOverlay.addClusterItem(regionItem);
 		}
-```								
+```		
+						
 * 设置监听
+
 ``` java							
 //设置自定义绘制接口和聚合点点击接口
         clusterOverlay.setClusterRenderer(this);
 		clusterOverlay.setOnClusterClickListener(this);
 ```	
+
 * 自定义渲染
+
 ``` java
 public Drawable getDrawAble(int clusterNum) {
 		//根据聚合点数目不一样对聚合点进行不同样式的渲染
@@ -60,7 +75,9 @@ public Drawable getDrawAble(int clusterNum) {
 	}
 
 ```	
+
 * 聚合点点击事件
+
 ``` java
 public void onClick(Marker marker, List<ClusterItem> clusterItems) {
 		String content = "";
