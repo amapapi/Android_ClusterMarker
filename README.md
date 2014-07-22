@@ -22,6 +22,8 @@
  
 ![Screenshot]( https://raw.githubusercontent.com/amapapi/Android_ClusterMarker/master/Resources/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)  
 
+ + 介绍视频 <http://www.tudou.com/programs/view/XJMtd6pfn3U//>
+
 ## 使用方法：
  
 -  1:搭建高德地图 AndroidSDK工程方法见：**[配置方法](http://developer.amap.com/api/android-sdk/guide/project/)**
